@@ -1,0 +1,519 @@
+/*------------------------------------------------------------------css reset----------------------------------------------------*/
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+    
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*------------------------------------------------------------------css reset----------------------------------------------------*/
+*{
+    /*border: 2px solid black !important;*/
+}
+body{
+    
+    /*background-image: url(./resources/pexels-ithalu-907485.jpg);*/
+    
+    background-size: cover;
+    
+
+}
+.container{
+  width: 100%;
+  margin: auto;
+  background-color: #3F3838;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #440909;
+    
+}
+.logo{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+
+}
+.logo img{
+    width: 200px;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+
+}
+#sakura{
+    width: 34%;
+}
+nav{
+    width: 33%;
+
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    height: 100%;
+    justify-content: center;
+}
+nav li{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 5px;
+    background-color: rgba(226,190,207,255);
+    border-radius: 10px;
+
+}
+nav li:hover{
+  background-color: rgb(238, 148, 197);
+}
+nav li>a{
+  /*width: ;*/
+}
+nav a{
+  text-decoration: none;
+  color: black;
+  
+}
+#self{
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#self img{
+  max-width: 200px; /**************Change this when needed*****************/
+}
+.apps{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.apps ul{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+
+  
+}
+.apps li{
+
+}
+.apps img{
+  width: 100px;
+}
+
+
+#web-designs-section{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+   
+}
+
+.webdesign img {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto ;
+  padding-bottom: 10px;
+
+  
+}
+.webdesign p{
+  text-align: center;
+  background-color: #D9D9D9;
+  max-width: 70%;
+  margin: auto;
+  
+}
+.webdesign>p:first-of-type{
+  font-size: 1.9rem;
+}
+.webdesign>p:nth-of-type(2){
+  font-size: 1.4rem;
+}
+
+#illustrations {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  text-align: center;
+  font-size: 1.8rem;
+}
+#illustrations div{
+  width: 30%;
+  
+
+}
+#illustrations span{
+  width: 100%;
+}
+
+.othersections{
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.othersections a {
+  text-decoration: none;
+  color: palevioletred;
+}
+
+.illustration{
+  background-image: url(./html/illustration_assets/Final_Gallegos\ -\ Copy.png);
+  background-size:calc(600px);
+  background-position: left;
+  background-repeat: no-repeat;
+  transition: transform 0.5s;
+
+}
+.illustration:hover{
+  transform: scale(1.3);
+  filter: grayscale(70%);
+  
+}
+.editing{
+  background-image: url(./html/editing_assets/passageoftime-Gallegos.png);
+  background-size: calc(850px);
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s;
+
+}
+.editing:hover{
+  transform: scale(1.3);
+  filter: grayscale(70%);
+}
+.drawing{
+  background-image: url(./html/drawing_assets/20230506_171813.jpg);
+  background-size: calc(800px);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  transition: transform 0.5s;
+
+}
+.drawing:hover{
+  transform: scale(1.3);
+  filter: grayscale(70%);
+}
+
+.about-me{
+    padding: 30px;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+    
+}
+.about-me h2{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+}
+.about-me div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 80%;
+    align-self: center;
+
+
+}
+.about-me div img{
+  /*width: 40%;*/
+  max-width: 300px;
+
+  
+
+}
+.about-me div p{
+    font-size: 1.2rem;
+    text-align: center;
+    width: 50%;
+    align-self: center;
+}
+/*
+.about-me div p{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 50px;
+    width: 60%;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+
+}*/
+#project{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: #3F3838;
+  align-items: center;
+  color: #D9D9D9;
+  
+}
+#project div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+}
+#project h2, #project p{
+    text-align: center;
+    background-color: #3F3838;
+
+}
+#project h2{
+  font-size: 1.5rem;
+  padding: 20px;
+  width: 50%;
+}
+
+#project p {
+  padding: 10px;
+  margin-bottom: 20px;
+  padding: 30px;
+  width: 50%;
+
+}
+#project button{
+  /*display: block;*/
+  /*margin: auto;
+  padding: 15px 30px; */
+  /*width: 200px;*/
+  align-self: center;
+}
+/**********************************button*********************************/
+.animated-button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 16px 36px;
+  border: 4px solid;
+  border-color: transparent;
+  font-size: 16px;
+  background-color: inherit;
+  border-radius: 100px;
+  font-weight: 600;
+  color: rgb(238, 148, 197);
+  box-shadow: 0 0 0 2px rgb(238, 148, 197);
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button svg {
+  position: absolute;
+  width: 24px;
+  fill: rgb(238, 148, 197);
+  z-index: 9;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .arr-1 {
+  right: 16px;
+}
+
+.animated-button .arr-2 {
+  left: -25%;
+}
+
+.animated-button .circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background-color: rgb(238, 148, 197);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button .text {
+  position: relative;
+  z-index: 1;
+  transform: translateX(-12px);
+  transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.animated-button:hover {
+  box-shadow: 0 0 0 12px transparent;
+  color: #212121;
+  border-radius: 12px;
+}
+
+.animated-button:hover .arr-1 {
+  right: -25%;
+}
+
+.animated-button:hover .arr-2 {
+  left: 16px;
+}
+
+.animated-button:hover .text {
+  transform: translateX(12px);
+}
+
+.animated-button:hover svg {
+  fill: #212121;
+}
+
+.animated-button:active {
+  scale: 0.95;
+  box-shadow: 0 0 0 4px rgb(238, 148, 197);
+}
+
+.animated-button:hover .circle {
+  width: 220px;
+  height: 220px;
+  opacity: 1;
+}
+
+/*************************************************************************/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 20px;
+    
+    
+}
+footer p{
+  text-align: center;
+  align-self: center;
+  color: aliceblue;
+}
+footer img{
+    width: 80px;
+    
+
+}
+#socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#socials ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    color: #D9D9D9;
+    
+}
+#socials img{
+  /*background-color: white;
+  border-radius: 50%;*/
+}
+
+/*************responsiveness****************/
+@media only screen and (max-width: 800px) {
+  #self img{
+    width: 100%;
+    
+  } 
+}
