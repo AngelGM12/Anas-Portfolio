@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../styledrawing.css">
 </head>
 <body>
     <div class="container">
@@ -13,7 +14,7 @@
         </header>
         <section class="menu">
             <div class="logo">
-                <img src="../resources/sakura.jpg" alt="My Logo">
+                <img src="../resources/logo.png" alt="My Logo">
             </div>
             <div id="sakura">
 
@@ -27,26 +28,48 @@
                 </ul>
             </nav>
             <div id="self">
-                <img src="../resources/self.jpg" alt="">
+                <img src="../resources/ana.png" alt="">
             </div>
         </section>
+        <div class="full-img" id="fullimgbox">
+            <img src="./illustration_assets/WhatsApp Image 2024-04-17 at 12.19.34_a1080134.jpg"" alt="" id="fullimg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
         <section id="drawings">
             <span>Drawings</span>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
-            <div>asdfasdf</div>
+            <div id="images">
+                <img src="./drawing_assets/20201027_193831.jpg" alt="" onclick="openFullImg(this.src)">
+                <img src="./drawing_assets/20230506_171813.jpg" alt="" onclick="openFullImg(this.src)">
+                <img src="./drawing_assets/sketchh.png" alt="" onclick="openFullImg(this.src)">
+            </div>
         </section> 
         <footer>
             <p>&copy; Annabel Perez 2024</p>
-            <img src="../resources/sakura.jpg" alt="logo">
+            
             <div id="socials">
                 <ul>
-                    <li>icon</li>
-                    <li>icon</li>
-                    <li>icon</li>
+                    <li><img src="../resources/Icons/email.png" alt=""></li>
+                    <li><img src="../resources/Icons/in.png" alt=""></li>
+                    <li><img src="../resources/Icons/instagram.png" alt=""></li>
+                    <li><img src="../resources/Icons/be.png" alt=""></li>
                 </ul>
+                
             </div>
+            <div id="noshow">this is a blank text</div>
         </footer>
-    </div>    
+    </div> 
+    <script>
+        let fullimgbox = document.getElementById("fullimgbox");
+        let fullimg = document.getElementById("fullimg");
+
+        function openFullImg(pic){
+            fullimgbox.style.display = "flex";
+            fullimg.src = pic;
+
+        }
+        function closeFullImg(){
+            fullimgbox.style.display = "none"
+        }
+    </script>   
 </body>
 </html>
