@@ -20,10 +20,7 @@
     
 }
 
-nav{
-    width: 33%;
 
-}
 
 .full-img{
     width: 100%;
@@ -35,6 +32,7 @@ nav{
     display: none;
     align-items: center;
     justify-content: center;
+    z-index: 99;
 }
 .full-img img{
     width: 90%;
@@ -48,3 +46,7 @@ nav{
     color: white;
     cursor: pointer;
 }
+
+#images{
+    z-index: 5;
+  }

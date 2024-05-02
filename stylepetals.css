@@ -3,13 +3,16 @@
     padding: 20px;
 }*/
 #blossom_container {
-    background-color: #f1f1f1;
+    /*background-color: #f1f1f1;*/
     background-size: cover;
-    position: absolute;
+    display: block;
+    background: rgba(0, 0, 0, 0.0);
+    position: fixed;
     top: 0;
     right: 0;
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
+    width: calc(100%);
+    height: calc(100%);
+    
 }
 .petal {
     background: url(http://talktofill.surge.sh/cherry-blossom.png) no-repeat;
