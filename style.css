@@ -92,15 +92,16 @@ table {
 	border-spacing: 0;
 }
 /*------------------------------------------------------------------css reset----------------------------------------------------*/
-*{
-    /*border: 2px solid black !important;*/
-}
+/**{
+    /*border: 2px solid black !important;
+}*/
 body{
     
     /*background-image: url(./resources/pexels-ithalu-907485.jpg);*/
     
     /*background-size: cover;*/
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
     
 
 }
@@ -168,6 +169,7 @@ nav li{
     padding: 5px;
     background-color: #F7B2B9 ;
     border-radius: 10px;
+    display: flex;
 
 }
 nav li:hover{
@@ -177,6 +179,7 @@ nav li:hover{
 nav a{
   text-decoration: none;
   color: black;
+  width: 100%;
   
 }
 #self{
@@ -213,16 +216,27 @@ nav a{
   width: 60px;
   /*min-width: 60px;*/
 }
-
+#process{
+  display: flex;
+  justify-content: center;
+  background-color: #440909;
+}
+#process img{ 
+  width: 50%;
+  
+}
 
 #web-designs-section{
     padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 20px;
+    justify-content: center;
    
 }
-
+.webdesign{
+  width: 45%;
+}
 .webdesign img {
   width: 100%;
   max-width: 1000px;
@@ -236,18 +250,64 @@ nav a{
   background-color: #D9D9D9;
   max-width: 70%;
   margin: auto;
+  font-size: 1.9rem;
   
 }
-.webdesign>p:first-of-type{
+/*.webdesign>p:first-of-type{
   font-size: 1.9rem;
 }
 .webdesign>p:nth-of-type(2){
   font-size: 1.4rem;
+}*/
+.images{
+    
+    z-index: 5;
+    position: relative;
+
 }
+
+/**************************************************************************/
+.full-img{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+.full-img img{
+    width: 90%;
+    max-width: 800px;
+}
+.full-img span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#images{
+    z-index: 5;
+  }
+
+  @media only screen and (max-height: 700px){
+    .full-img img{
+      width: 70%;
+      /*max-height: 800px;*/
+    }
+  }
+/**********************************************************************/
 
 #illustrations {
   display: flex;
   justify-content: space-around;
+  background-color: #440909;
   gap: 20px;
   padding: 40px;
   flex-wrap: wrap;
@@ -259,6 +319,9 @@ nav a{
 
 #illustrations span{
   width: 100%;
+}
+#illustrations span, #editing span, #drawings span{
+  color: #D9D9D9;
 }
 
 .othersections{
@@ -272,7 +335,11 @@ nav a{
 }
 .othersections a {
   text-decoration: none;
-  color: palevioletred;
+  color: #D9D9D9;
+  font-weight: 700;
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+  
+  
 }
 
 .illustration{
@@ -281,6 +348,10 @@ nav a{
   background-position: left;
   background-repeat: no-repeat;
   transition: transform 0.5s;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
 
 }
 .illustration:hover{
@@ -294,6 +365,10 @@ nav a{
   background-position: center;
   background-repeat: no-repeat;
   transition: transform 0.5s;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
 
 }
 .editing:hover{
@@ -306,6 +381,10 @@ nav a{
   background-position: bottom;
   background-repeat: no-repeat;
   transition: transform 0.5s;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  align-content: center;
 
 }
 .drawing:hover{
@@ -343,7 +422,7 @@ nav a{
 
 }
 .about-me div p{
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: center;
     width: 50%;
     align-self: center;
@@ -359,6 +438,14 @@ nav a{
     margin: auto;
 
 }*/
+#skills{
+  display: flex;
+  justify-content: center;
+  background-color: #440909;
+}
+#skills img{
+  width: 60%;
+}
 #project{
   padding: 50px;
   display: flex;
@@ -533,10 +620,7 @@ footer img{
     z-index: 2;
     
 }
-#socials img{
-  /*background-color: white;
-  border-radius: 50%;*/
-}
+
 /**********************************checkbox************************************/
 .fx-block{
   display: none;/**toggle visibility*/
@@ -650,6 +734,12 @@ footer img{
   .othersections{
     height: 300px;
   }
+  .webdesign p{
+    font-size: 1.4rem;
+  }
+  
+
+  
 }
 @media only screen and (max-width: 700px){
   .about-me div img{
@@ -662,6 +752,15 @@ footer img{
   .othersections{
     width: 80%;
   }
+  #web-designs-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .webdesign{
+    width: 80%;
+  }
+  
 }
 
 @media only screen and (max-width: 550px){
@@ -687,5 +786,16 @@ footer img{
     
     width: 100%;
     
+  }
+  .editing{
+    background-position: center;
+    background-size: calc(550px);
+  }
+  .drawing{
+    background-size: calc(450px);
+    background-position:center ;
+  }
+  #process img{
+    width: 100%;
   }
 }

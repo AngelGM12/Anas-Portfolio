@@ -19,7 +19,15 @@
     text-align: center;
     
 }
+.images{
+    
+    z-index: 5;
+    position: relative;
 
+}
+#illustrations{
+    background-color: #3F3838;
+}
 
 
 .full-img{
@@ -49,4 +57,11 @@
 
 #images{
     z-index: 5;
+  }
+
+  @media only screen and (max-height: 700px){
+    .full-img img{
+      width: 40%;
+      /*max-height: 800px;*/
+    }
   }
